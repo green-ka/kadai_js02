@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Document</title>
+  </head>
+
+  <body>
+    <!-- タイトル -->
+    <header id="header">
+      <p class="title_logo">
+        <img src="img/title_logo.PNG" alt="タイトルロゴ" />
+      </p>
+      <span>ガチャシュミレーター</span>
+    </header>
+    <main>
+      <!-- 排出確立エリア -->
+      <section id="kakuritu">
+        <p>排出確率</p>
+        <p>★3・・・2.5%</p>
+        <p>★2・・・18%</p>
+        <p>★1・・・79.5%</p>
+      </section>
+
+      <!-- ガチャエリア -->
+      <section id="gacha">
+        <p class="play">
+          <img src="img/ten_gacha.png" alt="10回引く" />
+        </p>
+      </section>
+
+      <!-- ガチャ演出エリア -->
+      <section id="gachamovie">
+        <video src="img/gachaMovie.MOV" autoplay loop muted></video>
+      </section>
+
+      <!-- 結果エリア -->
+      <section id="result">
+        <p class="gacharesult">ガチャ結果</p>
+        <div class="flexbox">
+          <dl>
+            <dt>
+              <img id="area0" src="" />
+            </dt>
+            <dd><p id="text0"></p></dd>
+          </dl>
+          <dl>
+            <dt>
+              <img id="area1" src="" />
+            </dt>
+            <dd><p id="text1"></p></dd>
+          </dl>
+          <dl>
+            <dt>
+              <img id="area2" src="" />
+            </dt>
+            <dd><p id="text2"></p></dd>
+          </dl>
+          <dl>
+            <dt>
+              <img id="area3" src="" />
+            </dt>
+            <dd><p id="text3"></p></dd>
+          </dl>
+          <dl>
+            <dt>
+              <img id="area4" src="" />
+            </dt>
+            <dd><p id="text4"></p></dd>
+          </dl>
+        </div>
+        <div class="flexbox">
+          <dl>
+            <dt>
+              <img id="area5" src="" />
+            </dt>
+            <dd><p id="text5"></p></dd>
+          </dl>
+          <dl>
+            <dt>
+              <img id="area6" src="" />
+            </dt>
+            <dd><p id="text6"></p></dd>
+          </dl>
+          <dl>
+            <dt>
+              <img id="area7" src="" />
+            </dt>
+            <dd><p id="text7"></p></dd>
+          </dl>
+          <dl>
+            <dt>
+              <img id="area8" src="" />
+            </dt>
+            <dd><p id="text8"></p></dd>
+          </dl>
+          <dl>
+            <dt>
+              <img id="area9" src="" />
+            </dt>
+            <dd><p id="text9"></p></dd>
+          </dl>
+        </div>
+      </section>
+
+      <!-- ガチャ累計結果エリア -->
+      <section id="ruikei">
+        <p class="gacharesult">ガチャ累計結果</p>
+        <table class="num">
+          <tr>
+            <th>ガチャを回した回数 :</th>
+            <td id="count"></td>
+            <td>連</td>
+          </tr>
+          <tr>
+            <th>使ったジュエル数 :</th>
+            <td id="juel"></td>
+            <td>個</td>
+          </tr>
+        </table>
+
+        <table class="total">
+          <tr>
+            <th></th>
+            <th>排出数</th>
+            <th>確率</th>
+          </tr>
+          <tr>
+            <th>キャラ★1</th>
+            <td id="ha1">-</td>
+            <td id="ka1">-</td>
+          </tr>
+          <tr>
+            <th>キャラ★2</th>
+            <td id="ha2">-</td>
+            <td id="ka2">-</td>
+          </tr>
+          <tr>
+            <th>キャラ★3</th>
+            <td id="ha3">-</td>
+            <td id="ka3">-</td>
+          </tr>
+        </table>
+      </section>
+
+      <!-- リセットエリア -->
+      <section class="resetarea">
+        <span id="reset">確率をリセットする</span>
+      </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>

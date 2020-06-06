@@ -1,0 +1,160 @@
+@charset "utf-8";
+
+/* 全体の共通設定 */
+body {
+  width: 700px;
+  margin: 30px auto;
+  border: 20px solid #47a89c; /* 枠線 */
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "メイリオ", "游ゴシック", "Yu Gothic";
+  background-image: url(../img/back.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: auto;
+}
+
+/* headerタグのみの設定 */
+#header {
+  font-weight: bold;
+  font-size: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.title_logo img {
+  width: 250px;
+  margin-bottom: 20px;
+}
+#header span {
+  color: #6cb4e4;
+  text-align: center;
+  padding: 0.25em;
+  border-top: solid 2px #6cb4e4;
+  border-bottom: solid 2px #6cb4e4;
+  background: -webkit-repeating-linear-gradient(
+    -45deg,
+    #f0f8ff,
+    #f0f8ff 3px,
+    #e9f4ff 3px,
+    #e9f4ff 7px
+  );
+  background: repeating-linear-gradient(
+    -45deg,
+    #f0f8ff,
+    #f0f8ff 3px,
+    #e9f4ff 3px,
+    #e9f4ff 7px
+  );
+}
+
+/* sectionタグの共通設定 */
+section {
+  margin: 15px auto;
+}
+
+/* 結果のタイトル */
+.gacharesult {
+  width: 200px;
+  height: 25px;
+  margin: 10px auto;
+  padding-top: 10px;
+  color: #ffffff;
+  font-weight: bold;
+  background-color: #ff69a3;
+}
+
+/* 排出確立エリアの設定 */
+#kakuritu {
+  width: 150px;
+  border: solid 3px #6091d3;
+  border-radius: 10px;
+  padding: 10px 0;
+  font-size: 12px;
+  background: #ffffff;
+}
+
+/* ガチャエリアの設定 */
+/* 画像の設定 */
+.play img {
+  width: 120px;
+}
+.play img:hover {
+  transform: scale(1.1, 1.1);
+  cursor: pointer;
+}
+
+#gachamovie video {
+  display: none;
+  width: 400px;
+  height: 260px;
+}
+
+/* ガチャ結果エリアの設定 */
+#result {
+  display: none;
+  width: 550px;
+  height: 240px;
+  border: solid 3px #ffddff;
+  padding: 10px 0;
+  background: #ffffff;
+}
+.flexbox {
+  display: flex;
+  justify-content: space-around;
+}
+#result img {
+  width: 70px;
+}
+
+/* ガチャ累計エリアの設定 */
+#ruikei {
+  width: 400px;
+  line-height: 20px;
+  padding-top: 20px;
+  border: solid 3px #ffddff;
+  background: #ffffff;
+}
+.num {
+  font-size: 13px;
+  margin-left: 35px;
+  margin-bottom: 10px;
+}
+.num th {
+  text-align: right;
+  width: 170px;
+  padding: 5px;
+}
+.num td {
+  width: 50px;
+  padding-left: 20px;
+  padding: 5px;
+}
+#count,
+#juel {
+  text-align: right;
+}
+
+.total {
+  font-size: 13px;
+  margin-left: 35px;
+  margin-bottom: 40px;
+}
+.total th,
+.total td {
+  border: solid 1px gray;
+  padding: 5px;
+  width: 100px;
+}
+
+/* リセットエリア */
+.resetarea {
+  margin-bottom: 50px;
+}
+#reset {
+  font-weight: bold;
+  color: coral;
+  background: linear-gradient(transparent 50%, yellow 50%);
+}
+#reset:hover {
+  cursor: pointer;
+}
